@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Notification Reminder</string>
+    <string name="start_notificaiton">Start Notification Reminder</string>
+    <string name="add_application">Add Application</string>
+    <string name="edit_period">Edit Period</string>
+    
+    <string name="choose_application">Choose Application</string>
+    <string name="choose_frequency">Reminder Frequency</string>
+
+    <string name="okay">OK</string>
+    
+    <string name="minute">Minute</string>
+    <string name="minutes">Minutes</string>
+    
+    <string name="delete">Delete</string>
+    
+    <string name="delete_content">Are you sure you want to delete</string>
+    
+    <string name="starting">Notification Reminder Started</string>
+    
+    <string name="running">Notification Reminder is currently running</string>
+    
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.stephendiniz.notification_reminder"
+	android:versionCode="1"
+	android:versionName="0.0.1" >
+
+	<uses-sdk
+		android:minSdkVersion="14"
+		android:targetSdkVersion="18" />
+
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name" >
+
+		<activity
+			android:name=".Activity_Main"
+			android:label="@string/app_name"
+			android:screenOrientation="portrait">
+
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+
+		</activity>
+
+		<service
+			android:name=".Service_Notification_Reminder"
+			android:configChanges="orientation|keyboardHidden">
+			
+		    <intent-filter android:priority="9001" />
+		    
+		</service>
+		
+		<service
+			android:name=".Service_Notification_Listener"
+			android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+
+			<intent-filter android:priority="9001">
+				<action android:name="android.service.notification.NotificationListenerService" />
+			</intent-filter>
+
+		</service>
+
+	</application>
+
+</manifest>
